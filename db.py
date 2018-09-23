@@ -5,6 +5,7 @@ from sqlalchemy import Interval
 from app.models import Orders, db
 from datetime import datetime
 
+
 #delivery_date = func.dateadd(func.now(), bindparam('tomorrow', timedelta(days=1), Interval()))
 user1 = Orders('abc123', 'puneet@ct.com', datetime.now(), datetime.now() + timedelta(days=1))
 user2 = Orders('def123', 'amit@ct.com', datetime.now(), datetime.now() + timedelta(days=1))
