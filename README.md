@@ -1,30 +1,4 @@
-# Chatbot Flask service
-A Flask Application that serves as middleware for chatbot interaction with Watson API
-
-## Instructions
-As always ensure you create a virtual environment for this application and install
-the necessary libraries from the `requirements.txt` file.
-
-```
-$ virtualenv venv
-$ source venv/bin/activate
-$ pip install -r requirements.txt
-```
-
-Then create the sqlite3 database file and create the tables based on our `app/models.py`.
-
-```
-$ touch /tmp/mydatabase.db
-$ python
->>> from app import db
->>> db.create_all()
->>> quit()
-```
-
-Then start the development server
-
-```
-$ python run.py
-```
-
-Browse to http://0.0.0.0:5000
+Webhook for an E-commerce chatbot.The webhook can extract information from MySQL database or make a call to another webservice (PrestaShop in this case).
+The webhook has been written using the Flask framework of Python.
+At the end run the run.py file and go to port number 9090 on your localhost.
+Use ngrok for tunneling and add the generated Public URL to your chatbot in Dialogflow.
